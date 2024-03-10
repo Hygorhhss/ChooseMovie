@@ -1,4 +1,7 @@
+from flask import Flask, render_template
 import random
+
+app = Flask(__name__)
 
 def escolher_filme(lista_filmes):
     """Função para escolher um filme aleatório da lista."""
@@ -10,7 +13,6 @@ lista_de_filmes = [
     "O Poderoso Chefão",
     "Matrix",
     "Titanic",
-    
     "Cidade de Deus",
     "Pulp Fiction",
     "Interestelar",
@@ -23,4 +25,9 @@ lista_de_filmes = [
 # Escolhendo um filme aleatório
 filme_aleatorio = escolher_filme(lista_de_filmes)
 
-print("Filme escolhido para assistir:", filme_aleatorio)
+@app.route('/')
+def index():
+    return render_template('index.html', filme_aleatorio=filme_aleatorio)
+
+if __name__ == '__main__':
+    app.run(debug=True)
