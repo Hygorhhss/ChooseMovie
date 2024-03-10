@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questionario</title>
+    <title>Questionário</title>
 </head>
 <body>
-    
+    <h1>Questionário</h1>
+    <form action="/escolher_filme" method="post">
+        <label for="categoria">Selecione a categoria do filme:</label>
+        <select name="categoria" id="categoria">
+            <option value="todos">Todos os filmes</option>
+            <option value="acao">Ação</option>
+            <option value="aventura">Aventura</option>
+            <option value="comedia">Comédia</option>
+            <!-- Adicione mais opções de categoria conforme necessário -->
+        </select>
+        <br>
+        <button type="submit">Escolher Filme</button>
+    </form>
 </body>
 </html>
