@@ -7,7 +7,34 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
-    <p>Filme escolhido para assistir: {{ filme_aleatorio }}</p>
+
+    <header>
+        <h1>Cine lovers</h1>
+    </header>
+
+        <div class="questionario">
+            <h2>Qual o estilo de filme de hoje?</h1>
+            <form action="/escolher_filme" method="post">
+                <label for="categoria"> Selecione a categoria do filme:</label>
+                <select name="categoria" id="categoria">
+                    <option value="todos">Cine</option>
+                    <option value="acao">Ação</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="comedia">Comédia</option>
+                    <option value="romance">Romance</option>
+                    <option value="drama">Drama</option>
+                    <option value="ficcao">Ficção</option>
+                    <option value="fantasia">Fantasia</option>
+                    <option value="animacao">Animação</option>
+                </select>
+                <br>
+                <button type="submit">Escolher Filme</button>
+            </form>
+        </div>
+        <div class="conteudo">
+            <p>Filme escolhido para assistir: {{ filme_aleatorio }}</p>
+        </div>
+
+        <footer><p class="p">Criado por <a href="https://github.com/Hygorhhss"> Hygor Henrique</a></p></footer>
 </body>
 </html>

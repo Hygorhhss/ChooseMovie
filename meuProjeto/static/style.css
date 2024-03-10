@@ -1,8 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Passion+One:wght@400;700;900&display=swap');
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    background-image: url(../1154.jpg);
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-    color: #333;
+    font-size: 2.5em;
+    font-family: "Embed code";
+    font
+}
+
+.questionario {
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    max-width: 450px;
+}
+
+.questionario h2 {
+    margin-bottom: 20px;
+}
+
+.questionario form {
+    margin-bottom: 20px;
+}
+
+.questionario label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.questionario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.questionario button {
+    padding: 10px 22px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.questionario button:hover {
+    background-color: #555;
+}
+
+.conteudo {
+    margin-top: 20px;
+    text-align: center;
+    font-style: initial;
+    font-size: larger;
+}
+
+footer {
+    text-align: center;
+    background-color: #1e4980;
+  
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  
+    width: 100%;
+    padding: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(168, 157, 157);
+    margin: auto;
+    text-align: center;
+}
+
+.p {
+    color: rgb(255, 255, 255);
 }
