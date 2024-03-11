@@ -1,4 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face  {
+    font-family: "cinema_viona";
+    src: url(../static/cinema_viona/Cinema\ Viona.ttf) format(opentype),
+format(truetype)}
+
+@font-face  {
+    font-family: "bonita";
+    src: url(../static/bonita_4/BONITA.ttf) format(opentype),
+    format(truetype)}
+
 
 * {
     padding: 0;
@@ -9,51 +22,66 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(../1154.jpg);
+    background-image: url("https://images.unsplash.com/photo-1620177088163-012f511de69d?q=80&w=1285&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover; /* para cobrir todo o fundo */
+    background-attachment: fixed; /* para tornar a imagem de fundo fixa */
+    background-position: bottom center; /* para centralizar a imagem */
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background: linear-gradient(135deg, #a8a39e5d, #e014055e); /* Gradiente de cores */
+    color: #fff;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    border-bottom-left-radius: 40px; /* Borda arredondada no canto inferior esquerdo */
+    font-family: 'Bebas Neue', sans-serif; /* Fonte estilizada */
 }
-
+        
 h1 {
     font-size: 2.5em;
-    font-family: "Embed code";
-    font
+    font-family: "cinema_viona";
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.623); /* Sombra no texto */
+}
+
+#categoria > option {
+    text-align: center;
+    text-transform: uppercase;
+
 }
 
 .questionario {
-    margin: auto;
+    margin: 190px auto 40px; /* Define margem superior e inferior de 50px e centraliza horizontalmente */
     text-align: center;
-    margin-top: 50px;
     padding: 50px;
-    background-color: #fff;
+    background-color: #ff0e0e54;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     max-width: 450px;
 }
 
 .questionario h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-style: initial;
+    font-family: "bonita";
 }
 
 .questionario form {
-    margin-bottom: 20px;
-}
+    margin-bottom: 15px;
 
-.questionario label {
-    display: block;
-    margin-bottom: 10px;
 }
 
 .questionario select {
-    width: 100%;
+    width: 50%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-family: "Embed code";
+    font-size: 0.9em;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
 }
 
 .questionario button {
@@ -74,8 +102,13 @@ h1 {
     margin-top: 20px;
     text-align: center;
     font-style: initial;
-    font-size: larger;
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: white;
+    -webkit-text-stroke: 1px black; /* Contorno preto de 1px */
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
+
 
 footer {
     text-align: center;
@@ -91,7 +124,7 @@ footer {
 
 a {
     text-decoration: none;
-    color: rgb(168, 157, 157);
+    color: #ff0e0ee7;
     margin: auto;
     text-align: center;
 }
